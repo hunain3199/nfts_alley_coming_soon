@@ -57,7 +57,7 @@ const Header = () => {
                         </SheetTrigger>
                         <SheetContent side="left">
                             <SheetHeader>
-                                <SheetTitle>    <Image src={"/logo.png"} alt="logo" width={200} height={200} />
+                                <SheetTitle>    <Image src={"/logo.png"} alt="logo" width={100} height={100} />
                                 </SheetTitle>
                                 <SheetDescription>
                                     Unlock Unique NFTs
