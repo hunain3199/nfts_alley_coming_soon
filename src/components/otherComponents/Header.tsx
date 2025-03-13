@@ -76,8 +76,8 @@ const Header = () => {
 
 
                                 </div>
-                                <div className="grid grid-cols-4 items-center gap-4 text-xl">
-                                devnet
+                                <div className="grid grid-cols-4 items-center gap-4 text-xl space-x-2">
+                                <span>devnet </span>
                                 <Switch />
 
                                 
