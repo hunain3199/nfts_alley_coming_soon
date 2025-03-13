@@ -52,7 +52,7 @@ const Header = () => {
 
                     <Sheet key={"left"}>
                         <SheetTrigger asChild>
-                            <GiHamburgerMenu size={30} />
+                            <GiHamburgerMenu size={30} color='white'/>
 
                         </SheetTrigger>
                         <SheetContent side="left">
