@@ -1,32 +1,34 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { useState , useEffect , useCallback } from 'react';
+import { useState , useEffect , useCallback , useMemo } from 'react';
 const Hero = ({ targetDate }:any) => {
 
-    const validTargetDate = targetDate instanceof Date ? targetDate : new Date();
-
-  const calculateTimeLeft = useCallback(() => {
-    const difference = validTargetDate.getTime() - new Date().getTime();
-    if (difference <= 0) {
-      return { day: 0, hrs: 0, min: 0, sec: 0 };
-    }
-    return {
-      day: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hrs: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      min: Math.floor((difference / (1000 * 60)) % 60),
-      sec: Math.floor((difference / 1000) % 60),
-    };
-  }, [validTargetDate]); 
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [calculateTimeLeft]); // 
+    const validTargetDate = useMemo(() => {
+        return targetDate instanceof Date ? targetDate : new Date();
+      }, [targetDate]); // ✅ Only updates when `targetDate` changes
+    
+      const calculateTimeLeft = useCallback(() => {
+        const difference = validTargetDate.getTime() - new Date().getTime();
+        if (difference <= 0) {
+          return { day: 0, hrs: 0, min: 0, sec: 0 };
+        }
+        return {
+          day: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hrs: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          min: Math.floor((difference / (1000 * 60)) % 60),
+          sec: Math.floor((difference / 1000) % 60),
+        };
+      }, [validTargetDate]); // ✅ Only re-runs if `validTargetDate` changes
+    
+      const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    
+      useEffect(() => {
+        const timer = setInterval(() => {
+          setTimeLeft(calculateTimeLeft());
+        }, 1000);
+        return () => clearInterval(timer);
+      }, [calculateTimeLeft]); //
   return (
     <div className='bg-gradient-to-r gap-24 from-[#1E1629] w-full via-[#FF00EA] px-2 md:px-16 to-[#1E1629] md:mx-28 md:w-[1120px] border-[#FF00EA] border-1 rounded-4xl backdrop-blur-2xl  shadow-[#1E1629] shadow-2xl mt-10 flex flex-col md:flex-row'>
       <div className='md:pt-28 md:pb-20 pt-10 '>
