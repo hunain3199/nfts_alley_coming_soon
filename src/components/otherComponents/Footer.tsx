@@ -9,7 +9,7 @@ const Footer = () => {
             <Image src={'/logo.png'} alt='' height={70} width={100}/>
         </div>
         <div className='pb-5 text-xl'>
-        BRD is the world's leading NFTs marketplace where <br />
+        BRD is the world&apos;s leading NFTs marketplace where <br />
         you can discover, sell and bid NFTs and get rich.
         </div>
         <div className='flex gap-4 pb-5'>
