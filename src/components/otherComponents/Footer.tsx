@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='pb-10 '>
             <Image src={'/logo.png'} alt='' height={70} width={100}/>
         </div>
-        <div className='pb-5'>
+        <div className='pb-5 text-xl'>
         BRD is the world's leading NFTs marketplace where <br />
         you can discover, sell and bid NFTs and get rich.
         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
             <div><Image src={'/facebook.png'} alt='' height={30} width={30}/></div>
             <div><Image src={'/google.png'} alt='' height={30} width={30}/></div>
         </div>
-        <div className='pb-5'>
+        <div className='pb-5 text-xl'>
         <span>All rights reserved<Link href="https://brdigitech.com" > Brdigitech</Link></span>
 
         </div>
