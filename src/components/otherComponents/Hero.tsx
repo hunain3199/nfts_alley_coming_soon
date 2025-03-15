@@ -44,22 +44,22 @@ interface HeroProps {
         <div className='text-black text-3xl md:text-5xl font-bold pt-3'>Exclusive <span className='pl-3'>Rewards</span></div>
         <div className='text-white pb-5 pt-4'>We create exclusive, next-gen NFTs powered by <br />
         cutting-edge blockchain technology.</div>
-        <div className='text-white pl-5 font-semibold'><Image src={"/tick.svg"} alt={"tick"} width={30} height={30} /> Rare & Exclusive NFTs</div>
-        <div className='text-white pl-5 font-semibold'><Image src={"/tick.svg"} alt={"tick"} width={30} height={30} /> Secure & Transparent</div>
-        <div className='text-white pl-5 font-semibold'><Image src={"/tick.svg"} alt={"tick"} width={30} height={30} /> Early Access Benefits</div>
+        <div className='text-white pl-5 font-semibold'><Image src={"/tick.svg"} alt={"tick"} width={30} height={30} priority={true} /> Rare & Exclusive NFTs</div>
+        <div className='text-white pl-5 font-semibold'><Image src={"/tick.svg"} alt={"tick"} width={30} height={30} priority={true} /> Secure & Transparent</div>
+        <div className='text-white pl-5 font-semibold'><Image src={"/tick.svg"} alt={"tick"} width={30} height={30} priority={true}  /> Early Access Benefits</div>
       </div>
 
 
       <div className='pt-20 pb-20 flex flex-col text-center items-center md:w-auto w-full'>
         <div>
-        <Image src={"/heroimage.svg"} alt={"tick"} width={400} height={200} />
+        <Image src={"/heroimage.svg"} alt={"tick"} width={400} height={200} priority={true}  />
         </div>
         <div className='bg-[#1E1629] rounded-2xl text-center pt-5 pb-10 mt-5 flex flex-col w-full'>
         
         <div className='flex flex-col gap-y-5 items-center justify-between px-7'>
             <div>
         <div className=''>
-        <Image src={"/comingsoon.svg"} alt={"tick"} width={300} height={200} />
+        <Image src={"/comingsoon.svg"} alt={"tick"} width={300} height={200} priority={true} />
         </div>
         </div>
         <div className="flex gap-5 w-full justify-center">
