@@ -5,10 +5,11 @@ const Card = () => {
     <div className='w-full flex flex-col justify-center items-center py-20'>
       <div className='pb-16'>
         <div className='text-white text-center text-sm md:text-xl'>
-        Soon to be launched NFTs
+        Soon to be launched
+
         </div>
         <div className='text-white text-4xl md:text-6xl font-bold'>
-        Trending NFTs
+        Trending NFTs Collection
         </div>
       </div>
 
