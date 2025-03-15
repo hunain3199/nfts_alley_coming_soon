@@ -50,7 +50,7 @@ interface HeroProps {
       </div>
 
 
-      <div className='pt-20 pb-20 flex flex-col text-center items-center md:w-auto w-full'>
+      <div className=' pb-20 flex flex-col text-center items-center md:w-auto w-full'>
         <div>
         <Image src={"/heroimage.svg"} alt={"tick"} width={400} height={200} priority={true}  />
         </div>

@@ -8,7 +8,7 @@ const Card = () => {
         Soon to be launched
 
         </div>
-        <div className='text-white text-4xl md:text-6xl font-bold'>
+        <div className='text-white text-3xl text-center md:text-6xl font-bold'>
         Trending NFTs Collection
         </div>
       </div>
