@@ -18,7 +18,7 @@ const Header = () => {
         <>
 
 
-            <div className='w-full hidden md:flex justify-between px-28 pt-5 items-center text-white'>
+            <div className='w-full hidden md:flex justify-between  pt-5 items-center text-white'>
                 <div><Image src={'/logo.png'} alt='logo' height={70} width={100} /></div>
                 <div className='flex space-x-6 text-[20px] items-center'>
                     <div>

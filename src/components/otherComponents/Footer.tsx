@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const Footer = () => {
   return (
-    <div className=" bg-gradient-to-r from-[#842A7C] justify-between to-[#1E1629]  md:max-w-[1120px]  flex flex-col md:flex-row px-10 md:px-28 pt-20 pb-20 text-white mx-6 md:mx-28 " >
+    <div className=" bg-gradient-to-r from-[#842A7C] justify-between to-[#1E1629] w-full   flex flex-col md:flex-row px-10  pt-20 pb-20 text-white  md:mx-0 " >
       <div className='flex flex-col'>
         <div className='pb-10 '>
             <Image src={'/logo.png'} alt='' height={70} width={100}/>

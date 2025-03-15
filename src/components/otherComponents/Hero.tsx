@@ -38,7 +38,7 @@ interface HeroProps {
 
     
   return (
-    <div className='bg-gradient-to-r gap-12 md:gap-24 from-[#1E1629] w-full via-[#FF00EA] px-2 md:px-16 to-[#1E1629] md:mx-28 md:max-w-[1120px] border-[#FF00EA] border-1 rounded-4xl backdrop-blur-2xl  shadow-[#1E1629] shadow-2xl mt-10 flex flex-col md:flex-row'>
+    <div className='bg-gradient-to-r gap-12 md:gap-24 from-[#1E1629] w-full via-[#FF00EA] px-2 md:px-16 to-[#1E1629]   border-[#FF00EA] border-1 rounded-4xl backdrop-blur-2xl  shadow-[#1E1629] shadow-2xl mt-10 flex flex-col md:flex-row'>
       <div className='md:pt-28 md:pb-20 pt-10 '>
         <div className='text-white text-3xl md:text-[45px] font-bold'>Unlock Unique NFTs - </div>
         <div className='text-black text-3xl md:text-5xl font-bold pt-3'>Exclusive <span className='pl-3'>Rewards</span></div>
